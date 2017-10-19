@@ -1,8 +1,8 @@
-#APLICACION MOVIL CON IONIC 2+ CON INTEGRACION DE FIREBASE
+# APLICACION MOVIL CON IONIC 2+ CON INTEGRACION DE FIREBASE
 
-##Sitio Web [Ir al sitio web](https://movilandme.es/)
+## Sitio Web [Movilandme](https://movilandme.es/)
 
-##Google Play [Descargar App](https://play.google.com/store/apps/details?id=es.movilandme)
+## Google Play [Descargar App](https://play.google.com/store/apps/details?id=es.movilandme)
 
 Esta es una aplicacion hibrida realizada en [Ionic](https://ionicframework.com/) 2 con Firebase como BaaS.
 
