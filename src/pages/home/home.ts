@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+// import { ThemeableBrowser, ThemeableBrowserOptions, ThemeableBrowserObject } from '@ionic-native/themeable-browser';
 
 import { LoadingController } from "ionic-angular"
 
@@ -10,11 +12,21 @@ import { LoadingController } from "ionic-angular"
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, private iab: InAppBrowser, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, private platform: Platform, private iab: InAppBrowser) {
+    this.platform = platform;
+  }
 
-    // const browser = this.iab.create('https://movilandme.es/');
+  showBrowser() {
 
     this.presentLoadingDefault();
+
+    const browser = this.iab.create('https://movilandme.es/', '_self', 'location=no,zoom=no,hardwareback=no');
+
+  }
+
+  closeApp() {
+
+    this.platform.exitApp();
 
   }
 
@@ -26,9 +38,12 @@ export class HomePage {
     loading.present();
 
     setTimeout(() => {
+
       loading.dismiss();
-    }, 10000);
+
+    }, 5000);
 
   }
+
 
 }
