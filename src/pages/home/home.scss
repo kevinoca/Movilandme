@@ -1,9 +1,39 @@
 page-home {
-
-    ion-spinner * {
-        width: 50px;
-        height: 50px;
-        stroke: red;
-        fill:black;
+  height: 100%;
+  .cabecera {
+    background-image: url('../assets/images/logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+  }
+  .body {
+    height: 80%;
+    background-image: url('../assets/images/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .button-container {
+      margin-top: 60%;
+      button {
+        height: 5em;
+        margin: 2em 0;
+        white-space: normal;
+        border-radius: 15px;
+        font-weight: normal;
+        .button-inner {
+          font-size: 1.4em;
+          width: 70%;
+          margin: 0 auto;
+          color: white;
+        }
       }
+      .pink-button {
+        background:rgba(227, 2, 67, 0.7);
+      }
+      .dark-button {
+        background:rgba(93,93,96,0.7);
+      }
+    }
+  }
 }

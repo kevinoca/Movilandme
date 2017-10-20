@@ -1,18 +1,28 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Movilandme
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
 
+<ion-content>
+
+  <div class="cabecera">
+
+  </div>
   <!-- <ion-spinner name="dots"></ion-spinner> -->
   <!-- Esta es una prueba del in-app-browser -->
 
-  <button ion-button block color="primary" (click)="showBrowser()">Ir a la página</button>
-  <button ion-button block color="danger" (click)="closeApp()">Cerrar App</button>
-  <!-- <p><button ion-button color="danger" (click)="getPermission()">getPermission de voz</button></p> -->
+  <div class="body" padding>
+
+    <div class="button-container">
+      <button ion-button block clear (click)="showBrowser()" class="pink-button">QUIERO VER TODAS LAS PROMOCIONES</button>
+      <button ion-button block clear (click)="closeApp()" class="dark-button">QUIERO VOLVER EN OTRO MOMENTO</button>
+    </div>
+    <!-- <p><button ion-button color="danger" (click)="getPermission()">getPermission de voz</button></p> -->
+
+  </div>
 
 </ion-content>
