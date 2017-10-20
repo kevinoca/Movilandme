@@ -1,11 +1,11 @@
 page-home {
   height: 100%;
   .cabecera {
-    background-image: url('../assets/images/logo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 20%;
+    background-image: url('../assets/images/logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .body {
     height: 80%;
@@ -14,7 +14,12 @@ page-home {
     background-repeat: no-repeat;
     background-size: cover;
     .button-container {
+      left: 0;
+      right: 0;
+      bottom: 0px;
       margin-top: 60%;
+      padding: 2em 15px;
+      position: absolute;
       button {
         height: 5em;
         margin: 2em 0;
@@ -29,10 +34,10 @@ page-home {
         }
       }
       .pink-button {
-        background:rgba(227, 2, 67, 0.7);
+        background: rgba(227, 2, 67, 0.7);
       }
       .dark-button {
-        background:rgba(93,93,96,0.7);
+        background: rgba(93, 93, 96, 0.7);
       }
     }
   }

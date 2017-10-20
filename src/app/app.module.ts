@@ -6,8 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-// import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { LoadingController } from 'ionic-angular';
 import { OneSignal } from '@ionic-native/onesignal';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
